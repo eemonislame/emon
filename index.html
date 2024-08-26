@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDev Studios</title>
+</head>
+<body>
+    <header class="main-header">
+    <div class="logo">
+        <img src="logo.png" alt="GameDev Studios Logo">
+    </div>
+    <nav class="navbar">
+        <ul id="navMenu" class="nav-links">
+            <li><a href="#games">Games</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to GameDev Studios</h1>
+            <p>Creating games that inspire and entertain millions.</p>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <h2>Our Games</h2>
+        <div class="game-grid">
+            <div class="game-item">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Game Title 1</h3>
+                <p>Brief description of the game.</p>
+            </div>
+            <div class="game-item">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Game Title 2</h3>
+                <p>Brief description of the game.</p>
+            </div>
+            <div class="game-item">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Game Title 3</h3>
+                <p>Brief description of the game.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            <article>
+                <h3>News Title 1</h3>
+                <p>Summary of the news article.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>News Title 2</h3>
+                <p>Summary of the news article.</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>News Title 3</h3>
+                <p>Summary of the news article.</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers" id="careers">
+        <h2>Join Our Team</h2>
+        <p>We're always looking for talented people to join us.</p>
+        <a href="#" class="btn-primary">See Open Positions</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>At GameDev Studios, we believe in creating games that bring joy to players all over the world.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="GameDev Studios Logo">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 GameDev Studios. All rights reserved.</p>
+    </footer>
+
+    <script>// Smooth scrolling to sections
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});</script>
+    <style>/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background: url('https://raw.githubusercontent.com/eemonislame/eemon/main/IMG_20240820_185555_018.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Games Section */
+.game-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.game-item {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* News Section */
+.news-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-grid article {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.news-grid article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.news-grid article a {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* Careers Section */
+.careers {
+    text-align: center;
+    background-color: #fff;
+}
+
+.careers p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+}
+
+/* About Section */
+.about {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #ff6600;
+}
+
+.main-footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #aaa;
+}</style>
+</body>
+</html>
