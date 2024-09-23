@@ -1,314 +1,302 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameDev Studios</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/eemonislame/emon/main/Photoroom-20240827_002219.png" type="image/png">
+   
+   <!-- this link is from Google fonts for close icon-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+   <meta charset="UTF-8">
+   <!-- this viewpoint keeps the page constant even in desktop mode -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Supercell</title>
 </head>
 <body>
-    <header class="main-header">
-    <div class="logo">
-        <img src="https://raw.githubusercontent.com/eemonislame/emon/main/Photoroom-20240827_002219.png" alt="GameDev Studios Logo">
-    </div>
-    <nav class="navbar">
-        <ul id="navMenu" class="nav-links">
-            <li><a href="#games">Games</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#careers">Careers</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-</header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to GameDev Studios</h1>
-            <p>Creating games that inspire and entertain millions.</p>
-        </div>
-    </section>
-
-    <!-- Games Section -->
-    <section class="games" id="games">
-        <h2>Our Games</h2>
-        <div class="game-grid">
-            <div class="game-item">
-                <img src="game1.jpg" alt="Game 1">
-                <h3>Game Title 1</h3>
-                <p>Brief description of the game.</p>
-            </div>
-            <div class="game-item">
-                <img src="game2.jpg" alt="Game 2">
-                <h3>Game Title 2</h3>
-                <p>Brief description of the game.</p>
-            </div>
-            <div class="game-item">
-                <img src="game3.jpg" alt="Game 3">
-                <h3>Game Title 3</h3>
-                <p>Brief description of the game.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- News Section -->
-    <section class="news" id="news">
-        <h2>Latest News</h2>
-        <div class="news-grid">
-            <article>
-                <h3>News Title 1</h3>
-                <p>Summary of the news article.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <h3>News Title 2</h3>
-                <p>Summary of the news article.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <h3>News Title 3</h3>
-                <p>Summary of the news article.</p>
-                <a href="#">Read More</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Careers Section -->
-    <section class="careers" id="careers">
-        <h2>Join Our Team</h2>
-        <p>We're always looking for talented people to join us.</p>
-        <a href="https://eemonislame.github.io/eemon/" class="btn-primary">See Open Positions</a>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>At GameDev Studios, we believe in creating games that bring joy to players all over the world.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="logo.png" alt="GameDev Studios Logo">
-            </div>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
-        <p>&copy; Emon Islam. All rights reserved.</p>
-    </footer>
-
-    <script>// Smooth scrolling to sections
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});</script>
-    <style>/* Global Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Header Styles */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    font-size: 18px;
-}
-
-/* Hero Section Styles */
-.hero {
-    height: 100vh;
-    background: url('https://raw.githubusercontent.com/eemonislame/emon/main/Peachy_20240411_213827848.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-}
-
-/* Section Styles */
-section {
-    padding: 80px 20px;
-    margin-top: 60px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* Games Section */
-.game-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.game-item {
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    text-align: center;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.game-item img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-/* News Section */
-.news-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.news-grid article {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.news-grid article h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.news-grid article a {
-    color: #ff6600;
-    font-weight: bold;
-}
-
-/* Careers Section */
-.careers {
-    text-align: center;
-    background-color: #fff;
-}
-
-.careers p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    padding: 15px 30px;
-    background-color: #ff6600;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #e65c00;
-}
-
-/* About Section */
-.about {
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-/* Footer Styles */
-.main-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo img {
-    height: 50px;
-}
-
-.footer-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.footer-nav ul li a {
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.footer-nav ul li a:hover {
-    color: #ff6600;
-}
-
-.main-footer p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.875rem;
-    color: #aaa;
-}</style>
+   <!-- sidebar -->
+   <div class="sidebar" id="sidebar">
+     <div class="sidebar-top">
+   <!-- for the top left image as icon -->
+       <img src="https://supercell.com/_next/static/media/supercell_logo.50e3c1ff.webp" alt="top-icon" height="40px">
+       <!-- close button -->
+       <button onclick="closeSidebar()" class="material-symbols-outlined">
+         close
+       </button>
+     </div>
+     <div class="sidebar-item">
+       <button class="b1">Games</button>
+       <button class="b1">Careers</button>
+       <button class="b1">Support</button>
+       <button class="b1">About us</button>
+     </div>
+   </div>
+   <!-- main top -->
+   <div class="mainbar-top">
+     <img src="https://supercell.com/_next/static/media/supercell_logo.50e3c1ff.webp" alt="top-icon" height="40px">
+     <!-- open button -->
+     <button onclick="openSidebar()" class="material-symbols-outlined">
+       menu
+     </button>
+   </div>
+   <div class="banner"><img src="https://www.riotgames.com/darkroom/960/8136f3cda272877a691918dada74750a:60c0f85da996bfac86222b5200c1c229/allgames-card-v6-final-lesstext-1920.jpg" alt="" width="100%"></div>
+   <div class="intro">
+      <h1>SUPERCELL</h1>
+      <p class="intxt">Makers of Hay Day, Clash of Clans,<br> Boom Beach, Clash Royale, Brawl Stars <br>and Squad Busters.
+</p>
+      <button class="letsgo">LETS GOOO!</button>      
+   </div>
+   <div class="news">
+      
+      
+   <div class="news-dev">
+      <div class="dev-container">
+      <img src="https://raw.githubusercontent.com/eemonislame/eemon/main/IMG_20240901_185240.jpg" alt="dev" class="dev" width="90%">
+   </div>
+   <p class="news-txt">NEWS</p>
+   <a href="" class="news-lnk">Welcoming Our New CFO to join the team</a>
+   </div>
+  <div class="news-dev">
+      <div class="dev-container">
+      <img src="https://supercell.com/images/143e697b836ac5ccec513775486f1efa/790/thumbnail_image_3.webp" alt="dev" class="dev" width="90%">
+   </div>
+   <p class="news-txt">NEWS</p>
+   <a href="" class="news-lnk">Squad Busters Goes Global</a>
+   </div>
+  <div class="news-dev">
+      <div class="dev-container">
+      <img src="https://supercell.com/images/a4af06e41854b10d1c32b79d5610cd4e/790/sccom_haaland_thumb_new.webp" alt="dev" class="dev" width="90%">
+   </div>
+   <p class="news-txt">NEWS</p>
+   <a href="" class="news-lnk">Football Superstar Erling Haaland Becomes<br> Playable Character in Clash of Clans</a>
+   </div>
+     
+</div>
+   <div class="footer">
+      Follow us on
+      <div class="social">
+         <!-- social media icons-->
+          <!-- YouTube -->
+         <a href="https://www.youtube.com" target="_blank"> <img src="https://supercell.com/_next/static/media/some_youtube.fd048a44.webp" alt="" height="25px">
+       </a>
+         <!-- Facebook -->
+         <a href="https://www.facebook.com" target="_blank">
+       <img src="https://supercell.com/_next/static/media/some_facebook.25d7be3c.webp" alt="" height="25px">
+    </a>
+     <!-- Instagram -->
+    <a href="https://www.instagram.com" target="_blank">
+       <img src="https://supercell.com/_next/static/media/some_instagram.73b957d1.webp" alt="" height="25px">
+       </a>
+    <!-- twitter -->
+    <a href="https://www.twitter.com" target="_blank">
+        <img src="https://supercell.com/_next/static/media/some_twitter.ed800386.webp" alt="" height="25px">
+    </a>                    
+    <!-- linkedin -->
+    <a href="https://www.linkedin.com" target="_blank">
+      <img src="https://supercell.com/_next/static/media/some_linkedin.c11ee8b3.webp" alt="" height="25px">
+    </a>
+    <a href="www.glassdor.com"><img src="https://supercell.com/_next/static/media/some_glassdoor.3e4af2f0.webp" alt="" height="25px"></a>
+      </div>
+    <hr>
+    <div class="download">
+       Download our games from<br>
+       <img src="https://supercell.com/_next/static/media/appstore.58a06803.webp" alt="" class="down">
+       <img src="https://supercell.com/_next/static/media/googleplay.c3b4e2ea.webp" alt="" class="down">
+     </div>
+     <hr>
+     <div class="tc">
+<button class="b2">Terms of Service</button>
+<button class="b2">Privacy Policy</button>
+<button class="b2">Parent's Guide</button>
+<button class="b2">Safe and Fair Play Policy</button>
+<button class="b2">Other Legal Docs</button>
+<button class="b2">For Media</button>
+<button class="b2">Our Domains </button>
+<button class="b2">Manage Cookies</button>
+     </div>
+     <div class="main-bottom"><div class="bottom-left">
+        Supercell Oy<br>
+Jätkäsaarenlaituri 1<br>
+00180 Helsinki<br>
+Finland </div>
+<img src="https://supercell.com/_next/static/media/supercell_logo.50e3c1ff.webp" class="bottom-icon" height="50px">
+     </div>
+   </div>
 </body>
+
+<script>
+   function openSidebar() {
+      console.log("Opening sidebar");
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.add("open");
+   }
+
+   function closeSidebar() {
+      console.log("Closing sidebar");
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.remove("open");
+   }
+</script>
+
+<style>
+   body {
+      margin: 0;
+   }
+   .sidebar {
+      background: black;
+      height: 100%;
+      position: fixed; /* Ensure the sidebar is fixed */
+      top: 0; /* Align it to the top */
+      left: 0; /* Align it to the left */
+      width: 0; /* Initially hidden */
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      transition: width 0.35s ease; /* Smooth transition for width */
+   }
+   .sidebar.open {
+      width: 100%; /* Adjust width as needed */
+      z-index: 9999;
+   }
+   .sidebar-top, .mainbar-top {
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+   }
+   .mainbar-top button {
+      transform: translateX(-30px); /* This moves the menu button 15px to the left */
+   }
+   .mainbar-top{
+      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      top: 0;
+   }
+   .material-symbols-outlined {
+      color: white;
+      font-size: 35px;
+      font-weight: 600;
+      background: #000000;
+      border: 0;
+   }
+   .sidebar-item {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      background: #000000;
+   }
+   .b1 {
+      text-align: left;
+      color: #979797;
+      font-size: 28px;          
+      background: #000000;
+      border: 0;
+      padding: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color .00001s ease;
+   }
+   .b1:active {
+      color: white;
+   }
+   
+   .footer{
+      background: #000000;
+      padding: 20px;
+      color: white;
+      font-size: 12.5px;
+      padding-top: 37px;
+      bottom: 0;      
+   }
+   .social{
+      display: flex;
+      align-items: center;
+      gap: 15px;    
+      padding-top: 18px;    
+      padding-bottom: 15px;    
+        
+   }
+   hr{
+      height: 0.7px; 
+      background-color: #4d4d4d; 
+      border: none; 
+      width: 100%;
+      }
+   .download{
+      padding-top: 20px;
+      padding-bottom: 18px;
+      }
+   .down{
+      height: 45px;
+      padding: 5px;
+      padding-top: 13px;
+   }
+   .tc{
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 18px;
+   }
+   .b2{
+      color: white;
+      text-align: left;
+      border: 0px;
+      background: #000000;
+      padding-top: 19px;
+      font-size: 15px;
+   }
+   .bottom-left{
+      color: #787878;
+      line-height: 1.8;
+   }
+   .main-bottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .bottom-icon{
+      align-self: flex-end;
+   }
+   .intro{
+      text-align: center;
+      padding-top: 110px;
+      background: url('https://supercell.com/_next/static/media/frontpage_hero_mobile.8e501ce0.png') no-repeat center center/cover;
+      height: 480px;
+      line-height: 1.6;
+      font-size: 18px;
+   } 
+   .intxt{
+      margin-top: 0px;
+   }   
+   h1{
+      margin-bottom: 0px;
+   }
+   .letsgo{
+      height: 50px; 
+      width: 130px; 
+      border-radius: 25px; 
+      border: 0px; 
+      color: #ffffff; 
+      background: #408cff;
+      margin: 10px;
+   }
+   .news{
+      padding: 50px 0px 20px 0px;
+   }
+   .news-dev{
+      text-align: center;
+      padding-bottom: 30px;
+   }
+   .news-lnk{
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;  
+      line-height: 1.6;    
+   }
+   .news-txt{
+      color: #ff0073de;
+      font-weight: 600;
+      font-size: 13px;      
+   }
+   .banner{
+       padding-top: 70px;
+   }
+</style>
 </html>
