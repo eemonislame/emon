@@ -1,127 +1,363 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   
-   <!-- this link is from Google fonts for close icon-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-   <meta charset="UTF-8">
-   <!-- this viewpoint keeps the page constant even in desktop mode -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>LET'S C</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <!-- sidebar -->
-   <div class="sidebar" id="sidebar">
-     <div class="sidebar-top">
-   <!-- for the top left image as icon -->
-       <h2 class="tp">LET'S C</h2>
-       <!-- close button -->
-       <button onclick="closeSidebar()" class="material-symbols-outlined">
-         close
-       </button>
-     </div>
-     <div class="sidebar-item">
-       <button class="b1">Tutorials</button>
-       <button class="b1">Contact</button>
-       <button class="b1">Blog</button>
-       <button class="b1">About us</button>
-     </div>
-   </div>
-   <!-- main top -->
-   <div class="mainbar-top">
-     <h2 class="tp">LET'S C</h2>
-     <!-- open button -->
-     <button onclick="openSidebar()" class="material-symbols-outlined">
-       menu
-     </button>
-   </div>
-   <div class="banner"><img src="" alt="" width="100%"></div>
-   </body>
-   <script>
-   function openSidebar() {
-      console.log("Opening sidebar");
-      var sidebar = document.getElementById("sidebar");
-      sidebar.classList.add("open");
-   }
+<header> <button id="toggleSidebar" class="menu-btn">☰</button> <!-- Sidebar Toggle Button --></header>
+    <div class="header">
+        <h1>Master C Programming</h1>
+        <p>Learn C with comprehensive tutorials and examples</p>
+    </div>
 
-   function closeSidebar() {
-      console.log("Closing sidebar");
-      var sidebar = document.getElementById("sidebar");
-      sidebar.classList.remove("open");
-   }
+    <div class="container">
+        <!-- Sidebar (overlay) -->
+        <aside id="sidebar">
+            <button id="closeSidebar" class="close-btn">&times;</button> <!-- Cross Button to close sidebar -->
+            <h2>Contents</h2>
+            <ul class="sidebar">
+                <li>
+                    <a href="#">Introduction</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Basics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Syntax</a></li>
+                        <li><a href="#">Variables</a></li>
+                        <li><a href="#">Data Types</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Control Structures</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">If-Else</a></li>
+                        <li><a href="#">Loops</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Functions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Function Declaration</a></li>
+                        <li><a href="#">Recursion</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Advanced Topics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Pointers</a></li>
+                        <li><a href="#">Memory Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <article>
+                <h2>Welcome to C Programming</h2>
+                <p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms. This tutorial will guide you through the basics of C and help you master advanced topics with examples and explanations.</p>
+                <!-- Cards Section for Vlogs or News -->
+<section class="cards-section">
+    <h2>Latest Vlogs & News</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Vlog 1">
+            <div class="card-content">
+                <h3>Vlog 1: Introduction to C</h3>
+                <p>In this vlog, we explore the basics of C programming and why it’s such a powerful language for beginners and experts alike.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Vlog 2">
+            <div class="card-content">
+                <h3>Vlog 2: Control Structures</h3>
+                <p>Learn about loops and conditionals in C programming in this easy-to-follow tutorial, suitable for all levels.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News">
+            <div class="card-content">
+                <h3>News: C Programming in 2024</h3>
+                <p>Find out how C is still relevant in 2024, and the impact it’s having on systems programming and embedded development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+                <h3>Sample C Code:</h3>
+                <pre>
+                    <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+                    </code>
+                </pre>
+                <p>Start your C journey by understanding basic syntax, followed by exploring functions, loops, arrays, and pointers!</p>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>Your go-to platform for mastering C Programming!</p>
+            </div>
+            <div><br>
+                <h3>Contact</h3>
+                <p>Email: support@ctutorials.com</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <p>&copy; 2024 C Programming Tutorials. All Rights Reserved.</p>
+    </footer>
+
+    <script>// Toggle Sidebar Open/Close
+const toggleSidebar = document.getElementById('toggleSidebar');
+const closeSidebar = document.getElementById('closeSidebar');
+const sidebar = document.getElementById('sidebar');
+
+toggleSidebar.addEventListener('click', () => {
+    sidebar.classList.add('active'); // Open the sidebar
+});
+
+closeSidebar.addEventListener('click', () => {
+    sidebar.classList.remove('active'); // Close the sidebar
+});
+
+// Toggle Dropdowns Open/Close
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        e.preventDefault();  // Prevent link behavior
+        const parent = toggle.parentElement;
+        parent.classList.toggle('active');  // Toggle the active class for dropdown
+    });
+});
 </script>
 <style>
-   body {
-      margin: 0;
-   }
-   .sidebar {
-      background: black;
-      height: 100%;
-      position: fixed; /* Ensure the sidebar is fixed */
-      top: 0; /* Align it to the top */
-      left: 0; /* Align it to the left */
-      width: 0; /* Initially hidden */
-      overflow-x: hidden; /* Hide horizontal scrollbar */
-      transition: width 0.35s ease; /* Smooth transition for width */
-   }
-   .sidebar.open {
-      width: 100%; /* Adjust width as needed */
-      z-index: 9999;
-   }
-   .tp{
-       color: #ffffff;
-       font-size: 35px;
-   }
-   .sidebar-top, .mainbar-top {
-      background: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 22px;
-      height: 68px;
-   }
-   .mainbar-top button {
-      transform: translateX(-30px); /* This moves the menu button 15px to the left */
-   }
-   .mainbar-top{
-      z-index: 1000;
-      position: fixed;
-      width: 100%;
-      top: 0;
-   }
-   .material-symbols-outlined {
-      color: white;
-      font-size: 35px;
-      font-weight: 600;
-      background: #000000;
-      border: 0;
-   }
-   .sidebar-item {
-      display: flex;
-      flex-direction: column;
-      padding: 15px;
-      background: #000000;
-   }
-   .b1 {
-      text-align: left;
-      color: #979797;
-      font-size: 28px;          
-      background: #000000;
-      border: 0;
-      padding: 15px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: color .00001s ease;
-   }
-   .b1:active {
-      color: white;
-   }
-   .banner{
-       padding-top: 70px;
-   }
-   </style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* This will prevent horizontal scrolling and possible gaps */
+    padding-left: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.menu-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full page width when active */
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+aside.active {
+    transform: translateX(0);
+}
+
+.close-btn {
+    background: none;
+    color: black;
+    font-size: 2rem;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+ul.sidebar {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+ul.sidebar li {
+    margin-bottom: 1rem;
+}
+
+ul.sidebar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.sidebar a:hover {
+    color: #007bff;
+}
+
+.dropdown-content {
+    display: none;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-left: 3px solid #333;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer .footer-content {
+    felx-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.cards-section {
+    margin: 2rem 0;
+}
+
+.cards-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 1rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+</style>
+</body>
 </html>
