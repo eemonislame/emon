@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Wizard</title>
+    <link rel="stylesheet" href="stylel.css">
+</head>
+<body>
+<header>
+    <div class="mainbar-top">
+    <h1>C Wizard</h1>
+    <button id="toggleSidebar" class="menu-btn">☰</button> <!-- Sidebar Toggle Button -->
+   </div> </header>
+    <div class="header">
+        <h1>Master C Programming</h1>
+        <p>Learn C with comprehensive tutorials and examples</p>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar (overlay) -->
+        <aside id="sidebar">
+            <button id="closeSidebar" class="close-btn">&times;</button> <!-- Cross Button to close sidebar -->
+            <h2>Contents</h2>
+            <ul class="sidebar">
+                <li>
+                    <a href="#">Introduction</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Basics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Syntax</a></li>
+                        <li><a href="#">Variables</a></li>
+                        <li><a href="#">Data Types</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Control Structures</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">If-Else</a></li>
+                        <li><a href="#">Loops</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Functions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Function Declaration</a></li>
+                        <li><a href="#">Recursion</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Advanced Topics</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Pointers</a></li>
+                        <li><a href="#">Memory Management</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <article>
+                <h2>Welcome to C Programming</h2>
+                <p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms. This tutorial will guide you through the basics of C and help you master advanced topics with examples and explanations.Start your C journey by understanding basic syntax, followed by exploring functions, loops, arrays, and pointers!</p>
+                <!-- Cards Section for Vlogs or News -->
+<section class="cards-section">
+    <h2>Latest Vlogs & News</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Vlog 1">
+            <div class="card-content">
+                <h3>Vlog 1: Introduction to C</h3>
+                <p>In this vlog, we explore the basics of C programming and why it’s such a powerful language for beginners and experts alike.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Vlog 2">
+            <div class="card-content">
+                <h3>Vlog 2: Control Structures</h3>
+                <p>Learn about loops and conditionals in C programming in this easy-to-follow tutorial, suitable for all levels.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News">
+            <div class="card-content">
+                <h3>News: C Programming in 2024</h3>
+                <p>Find out how C is still relevant in 2024, and the impact it’s having on systems programming and embedded development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<h2>Basics</h2>
+<p>Let's start with the basic structure of a C programme.</p>
+<table width="95%" border=1>
+    <tr>
+        <td>Link Section</td>
+        <td>Includes Files</td>
+    </tr>
+    <tr>
+        <td>Declaration Section</td>
+        <td>Declare Global Variables and Constants</td>
+    </tr>
+    <tr>
+        <td>main() Function Section<br>
+        {<br>
+        Declaration part<br>
+        Execution part<br>
+        }</td>
+        <td>
+            Contains Variables<br>Inputs<br> And Outputs
+        </td>
+        
+    </tr>
+    
+</table>
+             <p>A example code will help you understand better.</p>
+<pre><code>
+#include &lt;stdio.h&gt;
+
+int main() 
+{
+    printf("Hello, World!");
+    return 0;
+}
+</code>
+</pre>
+               <h4>Explanation:</h4>
+                
+                   <pre><code>#include &lt;stdio.h&gt;</code></pre><p>This file allow us to take Inputs and get Outputs.</p>
+                   <pre><code>int main() </code></pre><p>It starts the main programme.</p>
+                   <pre><code>printf("Hello, World!");</code></pre><p>Displays output.</p>
+          <pre><code>return 0;</code></pre>
+     <p>Ends the programme.</p>  
+     <p>The output of the above programme will be like this on the compiler.</p>
+     <pre>Hello, World!</pre> 
+     <p>To write and run c programme you can use compilers like <b>Codeblocks</b> or <b>Visual Studio Code</b>. For the examples we will use<b>Visual Studio code</b>. For a new programme , we have to open the<br> <b>Visual Studio code&gt;File&gt;New&gt;(file_name.c).</b></b> Make sure to use the <b>.c</b> extension at the end, otherwise the code won't work.</p> 
+     <h2>Inputs and Outputs</h2><code><p>
+<b>scanf("format specifier"); </b></code> Used for taking inputs.
+<code>
+<br><b>printf("output"); </b></code> Used for getting Outputs.<br>Now let's try an example.</p><br>
+<h4>Taking Input and getting Output:</h4>
+<pre><code>
+#include&lt;stdio.h&gt;
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    printf("%d", a);
+    return 0;
+}
+</code></pre>
+<h4>Explanation:</h4>
+Here we used <b>a</b> as a variable, <b>Variables are used to assign different kind of data.</b> we used the variable <b>a</b> as integer with <b>int</b> , <b>integer</b> refers the data is a natural number which is contained by the variable.<br><br>
+Now the <b><code>scanf("%d", &a);</code></b>takes the value of the variable <b>a</b>
+from the user<br><br> And then <b><code>printf("%d", a);</code></b> displays the number/value of <b>a</b> as Output.<br><br>
+ <h2>Basic Calculations</h2>     
+ <p>As we learned how to take inputs and how to get outputs, now we will try some basic calculations with the variables like <b>summation, multiplication and dividing</b>.</p>
+ <h4>Sum:</h4>
+ <p>To find the sum of two or more numbers, we have to use the plus<b>(+)</b>sign.And like this easy, we can find the sum of 7 and 5. Here's the code..</p>
+<pre><code>
+#include&lt;stdio.h&gt;
+int main()
+{
+    int sum;
+    sum = 7+5;
+    printf("Result=%d",sum);
+    return 0;
+}
+</code></pre>
+
+ 
+    
+                    
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>Your go-to platform for mastering C Programming!</p>
+            </div>
+            <div><br>
+                <h3>Contact</h3>
+                <p>Email: support@ctutorials.com</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <p>&copy; 2024 C Programming Tutorials. All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
