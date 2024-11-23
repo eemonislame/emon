@@ -9,10 +9,12 @@
 <body>
 <header>
     <div class="mainbar-top">
-    <h1>C Wizard</h1>
+    <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/IMG_20241116_034913.png" class="icon">
     <button id="toggleSidebar" class="menu-btn">☰</button> <!-- Sidebar Toggle Button -->
-   </div> </header>
-    <div class="header">
+   </div>
+   </header>
+   <div class="header">
+   <img class="banner" src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/IMG_20241116_041322.png">
         <h1>Master C Programming</h1>
         <p>Learn C with comprehensive tutorials and examples</p>
     </div>
@@ -20,10 +22,13 @@
     <div class="container">
         <!-- Sidebar (overlay) -->
         <aside id="sidebar">
-            <button id="closeSidebar" class="close-btn">&times;</button> <!-- Cross Button to close sidebar -->
+            <div class="sidebar-top">
+    <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/IMG_20241116_034913.png" class="icon">
+    <button id="closeSidebar" class="close-btn">&times;</button> <!-- Cross Button to close sidebar -->
+<div class="sdbr-content">   
             <h2>Contents</h2>
             <ul class="sidebar">
-                 <li><a href="http://eemonislame.work.gd/">Home</a></li>
+                <li><a href="http://eemonislame.work.gd/">Home</a></li>
                 <li>
                     <a href="#">Introduction</a>
                 </li>
@@ -38,7 +43,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Control Structures</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">If-Else</a></li>
+                        <li><a href="#condition">If-Else</a></li>
                         <li><a href="#">Loops</a></li>
                     </ul>
                 </li>
@@ -56,10 +61,12 @@
                         <li><a href="#">Memory Management</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+<li class="dropdown">
     <a href="about_us.html" class="dropdown">About Us</a>
-                </li>
+    
+</li>
             </ul>
+            </div>
         </aside>
 
         <!-- Main Content -->
@@ -72,14 +79,14 @@
     <h2>Latest Vlogs & News</h2>
     <div class="cards-container">
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Vlog 1">
+            <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/1731706279208.jpg" alt="Vlog 1">
             <div class="card-content">
                 <h3>Vlog 1: Introduction to C</h3>
                 <p>In this vlog, we explore the basics of C programming and why it’s such a powerful language for beginners and experts alike.</p>
             </div>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Vlog 2">
+            <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/file-U1Ikuv0PNKUK99onliEzM1fE.webp" alt="Vlog 2">
             <div class="card-content">
                 <h3>Vlog 2: Control Structures</h3>
                 <p>Learn about loops and conditionals in C programming in this easy-to-follow tutorial, suitable for all levels.</p>
@@ -138,7 +145,10 @@ int main()
      <p>Ends the programme.</p>  
      <p>The output of the above programme will be like this on the compiler.</p>
      <pre>Hello, World!</pre> 
-     <p>To write and run c programme you can use compilers like <b>Codeblocks</b> or <b>Visual Studio Code</b>. For the examples we will use<b>Visual Studio code</b>. For a new programme , we have to open the<br> <b>Visual Studio code&gt;File&gt;New&gt;(file_name.c).</b></b> Make sure to use the <b>.c</b> extension at the end, otherwise the code won't work.</p> 
+     <p>To write and run c programme you can use compilers like <b>Codeblocks</b> or <b>Visual Studio Code</b>. For the examples we will use<b>Visual Studio code</b>. For a new programme , we have to open the<br> <b>Visual Studio code&gt;File&gt;New&gt;(file_name.c).</b></b> Make sure to use the <b>.c</b> extension at the end, otherwise the code won't work.</p><br> 
+     <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio.jpg" class="visual">
+     <p align="center">opening new file in visual studio code</p>
+     <br><br>
      <h2>Inputs and Outputs</h2><code><p>
 <b>scanf("format specifier"); </b></code> Used for taking inputs.
 <code>
@@ -172,7 +182,71 @@ int main()
     return 0;
 }
 </code></pre>
+We can see the answer in the output.
+<pre><code>12</code></pre>
+<p>We can even calculate any numbers using variables, here's an example with variables.</p>
+<pre><code>
+#include&ltstdio.h&gt;
+int main() 
+{
+  double a, b, p;
+  printf("Enter two numbers:");
+  scanf("%lf %lf", &a, &b);
 
+  product = a * b;
+
+  printf("Product=%.2lf", p);
+  return 0;
+}
+</code></pre>
+<p>
+    We used a and b as variables to store the value and multiply using the sign (*) and store the result in p. we used <code><b>%.2lf</b></code> to display 2 numbers after the decimal point.<br>
+    For example:
+<pre><code>a = 4.56
+b = 8.91</code></pre>
+then,
+<pre><code>Product= 13.47</code></pre>
+</p><br><br>
+<div id="condition">
+<h2>Conditional Statement</h2><br>
+<p>
+    In C programming, conditional statements are used to perform different actions based on certain conditions. The main types include:<br>
+<ul>
+    <li><b>If statement</b>: Executes a block of code if a condition is true.</li>
+    <li><b>Else statement</b>: Executes an alternative block if the if condition is false.</li>
+    <li><b>Else if ladder</b>: Tests multiple conditions sequentially.</li>
+    <li><b>Switch statement</b>: Evaluates a variable and executes code blocks based on its value, typically used for multiple fixed cases.</li>
+</ul>
+These help control the program's flow based on logical conditions. Now let's see an example to find whether a number is even or odd.
+</p>
+<pre><code>
+#include&ltstdio.h&gt;
+int main() {
+  int num;
+  printf("Enter an integer: ");
+  scanf("%d", &num);
+  
+  if (num % 2 == 0)
+    printf("%d is even.", num);
+  else
+    printf("%d is odd.", num);
+
+  return 0;
+}
+</code></pre><p>We can write the code in the Visual studio code, to see the result.</p>
+<img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio1.jpg" class="visual"><br><br>
+<p>This is how the code looks like in the Visual Studio Code. If the numbers is divided by 2 means the remainder is 0, <code><b>num % 2 == 0</b> checks if the remainder is 0 or not. If it's 0 the number is even, otherwise it's odd.</code></p>
+ 
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
     
                     
@@ -196,7 +270,7 @@ int main()
                 <p>
                     <a href="#">Facebook</a> | 
                     <a href="#">Twitter</a> | 
-                    <a href="#">GitHub</a>
+                    <a href="https://github.com/eemonislame/emon">GitHub</a>
                 </p>
             </div>
         </div>
@@ -204,4 +278,4 @@ int main()
     </footer>
 <script src="script.js"></script>
 </body>
-</html>
+    </html>
