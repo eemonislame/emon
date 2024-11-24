@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Icon1.png" type="image/x-icon">
     <title>C Wizard</title>
     <link rel="stylesheet" href="stylel.css">
 </head>
@@ -103,23 +104,23 @@
 </section>
 <h2>Basics</h2>
 <p>Let's start with the basic structure of a C programme.</p>
-<table width="95%" border=1>
+<table width="95%" border=2>
     <tr>
-        <td>Link Section</td>
-        <td>Includes Files</td>
+        <td><c>Link Section</c></td>
+        <td><d>Includes Files</d></td>
     </tr>
     <tr>
-        <td>Declaration Section</td>
-        <td>Declare Global Variables and Constants</td>
+        <td><c>Declaration Section</c></td>
+        <td><d>Declare Global Variables and Constants</d></td>
     </tr>
     <tr>
-        <td>main() Function Section<br>
+        <td><c>main() Function Section<br>
         {<br>
         Declaration part<br>
         Execution part<br>
-        }</td>
+        }</c></td>
         <td>
-            Contains Variables<br>Inputs<br> And Outputs
+            <d>Contains Variables<br>Inputs<br> And Outputs</d>
         </td>
         
     </tr>
@@ -127,41 +128,43 @@
 </table>
              <p>A example code will help you understand better.</p>
 <pre><code>
-#include &lt;stdio.h&gt;
+<c>#include</c> &lt;stdio.h&gt;
 
-int main() 
+<c>int</c> <f>main()</f> 
 {
-    printf("Hello, World!");
-    return 0;
+    <c>printf</c>(<d>"Hello, World!"</d>);
+    <c>return</c> </f>0</f>;
 }
 </code>
 </pre>
                <h4>Explanation:</h4>
                 
-                   <pre><code>#include &lt;stdio.h&gt;</code></pre><p>This file allow us to take Inputs and get Outputs.</p>
-                   <pre><code>int main() </code></pre><p>It starts the main programme.</p>
-                   <pre><code>printf("Hello, World!");</code></pre><p>Displays output.</p>
-          <pre><code>return 0;</code></pre>
+<pre><code><c>#include</c> &lt;stdio.h&gt;</code></pre><p>This file allow us to take Inputs and get Outputs.</p>
+<pre><code><c>int</c> <f>main()</f></code></pre>
+<p>It starts the main programme.</p>
+<pre><code><c>printf</c>(<d>"Hello, World!"</d>);</code></pre>
+<p>Displays output.</p>
+<pre><code><c>return</c> <f>0</f>;</code></pre>
      <p>Ends the programme.</p>  
      <p>The output of the above programme will be like this on the compiler.</p>
      <pre>Hello, World!</pre> 
      <p>To write and run c programme you can use compilers like <b>Codeblocks</b> or <b>Visual Studio Code</b>. For the examples we will use<b>Visual Studio code</b>. For a new programme , we have to open the<br> <b>Visual Studio code&gt;File&gt;New&gt;(file_name.c).</b></b> Make sure to use the <b>.c</b> extension at the end, otherwise the code won't work.</p><br> 
      <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio.jpg" class="visual">
      <p align="center">opening new file in visual studio code</p>
-     <br><br>
+     <br>
      <h2>Inputs and Outputs</h2><code><p>
 <b>scanf("format specifier"); </b></code> Used for taking inputs.
 <code>
 <br><b>printf("output"); </b></code> Used for getting Outputs.<br>Now let's try an example.</p><br>
 <h4>Taking Input and getting Output:</h4>
 <pre><code>
-#include&lt;stdio.h&gt;
-int main()
+<c>#include</c>&lt;stdio.h&gt;
+<c>int</c> <f>main()</f>
 {
-    int a;
-    scanf("%d", &a);
-    printf("%d", a);
-    return 0;
+   <c>int</c> a;
+   <c>scanf</c>(<d>"%d"</d>, &a);
+   <c>printf</c>(<d>"%d"</d>, a);
+   <c>return</c> <f>0</f>;
 }
 </code></pre>
 <h4>Explanation:</h4>
@@ -173,39 +176,39 @@ from the user<br><br> And then <b><code>printf("%d", a);</code></b> displays the
  <h4>Sum:</h4>
  <p>To find the sum of two or more numbers, we have to use the plus<b>(+)</b>sign.And like this easy, we can find the sum of 7 and 5. Here's the code..</p>
 <pre><code>
-#include&lt;stdio.h&gt;
-int main()
+<c>#include</c>&lt;stdio.h&gt;
+<c>int</c> <f>main()</f>
 {
-    int sum;
-    sum = 7+5;
-    printf("Result=%d",sum);
-    return 0;
+   <c>int</c> sum;
+   sum = 7+5;
+   <c>printf</c>(<d>"Result=%d"</d>,sum);
+   <c>return</c> <f>0</f>;
 }
 </code></pre>
 We can see the answer in the output.
-<pre><code>12</code></pre>
+<pre><code><f>12</f></code></pre>
 <p>We can even calculate any numbers using variables, here's an example with variables.</p>
 <pre><code>
-#include&ltstdio.h&gt;
-int main() 
+<c>#include</c>&ltstdio.h&gt;
+<c>int</c> <f>main()</f>
 {
-  double a, b, p;
-  printf("Enter two numbers:");
-  scanf("%lf %lf", &a, &b);
+  <c>double</c> a, b, p;
+  <c>printf</c>(<d>"Enter two numbers:"</d>);
+  <c>scanf</c>(<d>"%lf %lf"</d>, &a, &b);
 
-  product = a * b;
+     product = a * b;
 
-  printf("Product=%.2lf", p);
-  return 0;
+  <c>printf</c>(<d>"Product=%.2lf"</d>, p);
+  <c>return</c> </>0</f>;
 }
 </code></pre>
 <p>
     We used a and b as variables to store the value and multiply using the sign (*) and store the result in p. we used <code><b>%.2lf</b></code> to display 2 numbers after the decimal point.<br>
     For example:
-<pre><code>a = 4.56
-b = 8.91</code></pre>
+<pre><code>a = <f>4.56</f>
+b = <f>8.91</f></code></pre>
 then,
-<pre><code>Product= 13.47</code></pre>
+<pre><code>Product= <f>13.47</f></code></pre>
 </p><br><br>
 <div id="condition">
 <h2>Conditional Statement</h2><br>
@@ -220,24 +223,62 @@ then,
 These help control the program's flow based on logical conditions. Now let's see an example to find whether a number is even or odd.
 </p>
 <pre><code>
-#include&ltstdio.h&gt;
-int main() {
-  int num;
-  printf("Enter an integer: ");
-  scanf("%d", &num);
+<c>#include</c>&ltstdio.h&gt;
+<c>int</c> <f>main()</f> 
+{
+  <c>int</c> num;
+  <c>printf</c>(<d>"Enter an integer: "</d>);
+  <c>scanf</c>(<d>"%d"</d>, &num);
   
-  if (num % 2 == 0)
-    printf("%d is even.", num);
-  else
-    printf("%d is odd.", num);
+  <c>if</c> (num % 2 == 0)
+  <c>printf</c>(<d>"%d is even."</d>, num);
+  <c>else</c>
+  <c>printf</c>(<d>"%d is odd."</d>, num);
 
-  return 0;
+  <c>return</c> <f>0</f>;
 }
 </code></pre><p>We can write the code in the Visual studio code, to see the result.</p>
-<img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio1.jpg" class="visual"><br><br>
-<p>This is how the code looks like in the Visual Studio Code. If the numbers is divided by 2 means the remainder is 0, <code><b>num % 2 == 0</b> checks if the remainder is 0 or not. If it's 0 the number is even, otherwise it's odd.</code></p>
- 
+<img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio1.jpg" class="visual"><br>
+<p>This is how the code looks like in the Visual Studio Code. If the numbers is divided by 2 means the remainder is 0, <code><b>num % 2 == 0</b></code> checks if the remainder is 0 or not. If it's 0 the number is even, otherwise it's odd.</p>
+<h4>Find the largest/smallest number</h4>
+<p>
+    We can find the largest or the smallest number using the conditional operators. 
+</p>
+<pre><code>
+<c>#include</c>&ltstdio.h&gt;
+<c>int</c> <f>main()</f>
+{<c>
+double</c> n1, n2, n3;
+<c>printf</c>(<d>"Enter 3 numbers:"</d>);
+<c>scanf</c>(<d>"%lf %lf %lf"</d>,&n1,&n2,&n3);
+
+<c>if</c> (n1 >= n2 && n1 >= n3)
+<c>printf</c>(<d>"Largest=%.2lf"</d>,n1);
+
+<c>else if</c> (n2 >= n1 && n2 >= n3)
+<c>printf</c>(<d>"Largest= %.2lf"</d>, n2);
+
+<c>else
+printf</c>(<d>"Largest= %.2lf "</d>, n3);
+
+<c>return</c> <f>0</f>;
+}
+</code></pre>
+<h4>Explanation</h4>
+<p>
+    1. The program takes three double-precision numbers <code>(n1, n2, and n3)</code> as input from the user.<br>
+
+
+2. It uses a series of if and else if conditions to determine which of the three numbers is the largest.<br>
+
+
+3. The condition <code>(n1 >= n2 && n1 >= n3)</code> checks if n1 is greater than or equal to both n2 and n3, while similar checks are made for n2 and n3 in subsequent conditions.<br>
+
+
+4. The largest number is printed with two decimal places using the printf function.<br>
+</p>
 </div>
+
  
  
  
