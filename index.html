@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="emon islam">
-    <meta name="keywords" content="eemonislame, C wizard">
-    <meta name="google-site-verification" content="sQrnRHQ7t7iMoaseuYlIHH2KJH3gf_NpN5KhfAXsITM" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" href="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Icon1.png" type="image/x-icon">
-    <title>C Wizard</title>
+    <meta name="description" content="emon islam">
+        <meta name="keywords" content="eemonislame, C wizard">
+    <meta name="google-site-verification" content="sQrnRHQ7t7iMoaseuYlIHH2KJH3gf_NpN5KhfAXsITM" />
+   
+    <link rel="icon" href="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Icon1.png" type="image/x-icon">
     <link rel="stylesheet" href="stylel.css">
+    <title>C Wizard</title>
 </head>
 <body>
 <header>
@@ -27,7 +28,7 @@
         <!-- Sidebar (overlay) -->
         <aside id="sidebar">
             <div class="sidebar-top">
-    <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/IMG_20241116_034913.png" class="icon">
+    <img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/IMG_20241116_034913.png" class="icon" alt="c wizard icon">
     <button id="closeSidebar" class="close-btn">&times;</button> <!-- Cross Button to close sidebar -->
 <div class="sdbr-content">   
             <h2>Contents</h2>
@@ -47,7 +48,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Control Structures</a>
                     <ul class="dropdown-content">
-                        <li><a href="#condition">If-Else</a></li>
+                        <li><a href="#condition" class="sidebar-link">If-Else</a></li>
                         <li><a href="#">Loops</a></li>
                     </ul>
                 </li>
@@ -107,7 +108,7 @@
 </section>
 <h2>Basics</h2>
 <p>Let's start with the basic structure of a C programme.</p>
-<table width="95%" border=2>
+<table width="95%" border=2 class="content">
     <tr>
         <td><c>Link Section</c></td>
         <td><d>Includes Files</d></td>
@@ -130,7 +131,7 @@
     
 </table>
              <p>A example code will help you understand better.</p>
-<pre><code>
+<pre><code class="content">
 <c>#include</c> &lt;stdio.h&gt;
 
 <c>int</c> <f>main()</f> 
@@ -142,10 +143,10 @@
 </pre>
                <h4>Explanation:</h4>
                 
-<pre><code><c>#include</c> &lt;stdio.h&gt;</code></pre><p>This file allow us to take Inputs and get Outputs.</p>
-<pre><code><c>int</c> <f>main()</f></code></pre>
+<pre><code forclass="content"><c>#include</c> &lt;stdio.h&gt;</code></pre><p>This file allow us to take Inputs and get Outputs.</p>
+<pre><code class="content"><c>int</c> <f>main()</f></code></pre>
 <p>It starts the main programme.</p>
-<pre><code><c>printf</c>(<d>"Hello, World!"</d>);</code></pre>
+<pre><code class="content"><c>printf</c>(<d>"Hello, World!"</d>);</code></pre>
 <p>Displays output.</p>
 <pre><code><c>return</c> <f>0</f>;</code></pre>
      <p>Ends the programme.</p>  
@@ -160,7 +161,7 @@
 <code>
 <br><b>printf("output"); </b></code> Used for getting Outputs.<br>Now let's try an example.</p><br>
 <h4>Taking Input and getting Output:</h4>
-<pre><code>
+<pre><code class="content">
 <c>#include</c>&lt;stdio.h&gt;
 <c>int</c> <f>main()</f>
 {
@@ -174,16 +175,16 @@
 Here we used <b>a</b> as a variable, <b>Variables are used to assign different kind of data.</b> we used the variable <b>a</b> as integer with <b>int</b> , <b>integer</b> refers the data is a natural number which is contained by the variable.<br><br>
 Now the <b><code>scanf("%d", &a);</code></b>takes the value of the variable <b>a</b>
 from the user<br><br> And then <b><code>printf("%d", a);</code></b> displays the number/value of <b>a</b> as Output.<br><br>
- <h2>Basic Calculations</h2>     
+ <h2>Basic Calculations and Variables</h2>     
  <p>As we learned how to take inputs and how to get outputs, now we will try some basic calculations with the variables like <b>summation, multiplication and dividing</b>.</p>
  <h4>Sum:</h4>
  <p>To find the sum of two or more numbers, we have to use the plus<b>(+)</b>sign.And like this easy, we can find the sum of 7 and 5. Here's the code..</p>
-<pre><code>
+<pre><code class="content">
 <c>#include</c>&lt;stdio.h&gt;
 <c>int</c> <f>main()</f>
 {
    <c>int</c> sum;
-   sum = 7+5;
+   sum = <f>7</f>+<f>5</f>;
    <c>printf</c>(<d>"Result=%d"</d>,sum);
    <c>return</c> <f>0</f>;
 }
@@ -191,7 +192,7 @@ from the user<br><br> And then <b><code>printf("%d", a);</code></b> displays the
 We can see the answer in the output.
 <pre><code><f>12</f></code></pre>
 <p>We can even calculate any numbers using variables, here's an example with variables.</p>
-<pre><code>
+<pre><code class="content">
 <c>#include</c>&ltstdio.h&gt;
 <c>int</c> <f>main()</f>
 {
@@ -225,7 +226,7 @@ then,
 </ul>
 These help control the program's flow based on logical conditions. Now let's see an example to find whether a number is even or odd.
 </p>
-<pre><code>
+<pre><code class="content">
 <c>#include</c>&ltstdio.h&gt;
 <c>int</c> <f>main()</f> 
 {
@@ -233,7 +234,7 @@ These help control the program's flow based on logical conditions. Now let's see
   <c>printf</c>(<d>"Enter an integer: "</d>);
   <c>scanf</c>(<d>"%d"</d>, &num);
   
-  <c>if</c> (num % 2 == 0)
+  <c>if</c> (num % <f>2</f> == <f>0</f>)
   <c>printf</c>(<d>"%d is even."</d>, num);
   <c>else</c>
   <c>printf</c>(<d>"%d is odd."</d>, num);
@@ -241,13 +242,13 @@ These help control the program's flow based on logical conditions. Now let's see
   <c>return</c> <f>0</f>;
 }
 </code></pre><p>We can write the code in the Visual studio code, to see the result.</p>
-<img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio1.jpg" class="visual"><br>
-<p>This is how the code looks like in the Visual Studio Code. If the numbers is divided by 2 means the remainder is 0, <code><b>num % 2 == 0</b></code> checks if the remainder is 0 or not. If it's 0 the number is even, otherwise it's odd.</p>
+<img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/Visual_studio1.jpg" class="visual" alt="opening new files on visual studio code"><br>
+<p>This is how the code looks like in the Visual Studio Code. If the numbers is divided by 2 means the remainder is 0, <code><b>num % 2 == 0</b></code> checks if the remainder is 0 or not. If it's 0 the number is even, otherwise it's odd.</p><br>
 <h4>Find the largest/smallest number</h4>
 <p>
     We can find the largest or the smallest number using the conditional operators. 
 </p>
-<pre><code>
+<pre><code class="content">
 <c>#include</c>&ltstdio.h&gt;
 <c>int</c> <f>main()</f>
 {<c>
@@ -275,12 +276,45 @@ printf</c>(<d>"Largest= %.2lf "</d>, n3);
 2. It uses a series of if and else if conditions to determine which of the three numbers is the largest.<br>
 
 
-3. The condition <code>(n1 >= n2 && n1 >= n3)</code> checks if n1 is greater than or equal to both n2 and n3, while similar checks are made for n2 and n3 in subsequent conditions.<br>
+3. The condition <code class="content">(n1 >= n2 && n1 >= n3)</code> checks if n1 is greater than or equal to both n2 and n3, while similar checks are made for n2 and n3 in subsequent conditions.<br>
 
 
-4. The largest number is printed with two decimal places using the printf function.<br>
+4. The largest number is printed with two decimal places using the printf function.<br><br>
+</p>
+<h4>Check leap year</h4>
+<p>
+    We can check if a year is leap year or bot using the conditional operators
+ <pre><code class="content">
+<c>#include</c>&ltstdio.h&gt;
+
+<c>int</c> <f>main()</f>
+{
+<c>int</c> y;
+<c>printf</c>(<d>"Enter a year: "</d>);
+<c>scanf</c>(<d>"%d"</d>, &y);
+
+<c>if</c>((y%<f>4</f>==<f>0</f> && y%<f>100</f>!=<f>0</f>)||
+   (y%<f>400</f>==<f>0</f>)) 
+ {
+ <c>printf</c>(<d>"%d is leap year.\n"</d>,y);
+ } 
+<c>else</c>
+ {
+ <c>printf</c>("<d>%d isn't leap year\n"</d>,y);
+ }
+
+<c>return</c> <f>0</f>;
+}
+ </code></pre>
+<h4>Explanation:</h4>
+
+1. A year is a leap year if it is divisible by 4 but not divisible by 100, or it is divisible by 400.<br><br>
+
+
+2. The condition <code class="content">(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)</code> checks this rule.<br>
 </p>
 </div>
+<h2>Loops</h2>
 
  
  
@@ -312,9 +346,9 @@ printf</c>(<d>"Largest= %.2lf "</d>, n3);
             <div>
                 <h3>Follow Us</h3>
                 <p>
-                    <a href="#">Facebook</a> | 
-                    <a href="#">Twitter</a> | 
-                    <a href="https://github.com/eemonislame/emon">GitHub</a>
+                    <a href="#"><img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/some_youtube.webp" alt="" width="50"></a> | 
+                    <a href="#"><img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/some_facebook.webp" alt="" width="40"></a> | 
+                    <a href="https://github.com/eemonislame/emon"><img src="https://raw.githubusercontent.com/eemonislame/eemon/refs/heads/main/github.png" alt="" width="50"></a>
                 </p>
             </div>
         </div>
