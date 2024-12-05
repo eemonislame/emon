@@ -34,33 +34,34 @@
             <h2>Contents</h2>
             <ul class="sidebar">
                 <li><a href="http://eemonislame.work.gd/">Home</a></li>
+<li><a href="examples.html">Examples</a></li>
                 <li>
-                    <a href="#">Introduction</a>
+                    <a href="#basics" class="sidebar-link">Introduction</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Basics</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Syntax</a></li>
                         <li><a href="#">Variables</a></li>
-                        <li><a href="#">Data Types</a></li>
+                        <li><a href="#data" class="sidebar-link">Data Types</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Control Structures</a>
                     <ul class="dropdown-content">
                         <li><a href="#condition" class="sidebar-link">If-Else</a></li>
-                        <li><a href="#">Loops</a></li>
+                        <li><a href="#loops" class="sidebar-link">Loops</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+   <li class="dropdown">
                     <a href="#" class="dropdown-toggle">Functions</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Function Declaration</a></li>
-                        <li><a href="#">Recursion</a></li>
+    <li><a href="#function" class="sidebar-link">Function Declaration</a></li>
+ <li><a href="#funr" class="sidebar-link">Recursion</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Advanced Topics</a>
+ <li class="dropdown">
+     <a href="#" class="dropdown-toggle">Advanced Topics</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Pointers</a></li>
                         <li><a href="#">Memory Management</a></li>
@@ -106,6 +107,7 @@
         </div>
     </div>
 </section>
+<div id="basics"></div>
 <h2>Basics</h2>
 <p>Let's start with the basic structure of a C programme.</p>
 <table width="95%" border=2 class="content">
@@ -175,6 +177,22 @@
 Here we used <b>a</b> as a variable, <b>Variables are used to assign different kind of data.</b> we used the variable <b>a</b> as integer with <b>int</b> , <b>integer</b> refers the data is a natural number which is contained by the variable.<br><br>
 Now the <b><code>scanf("%d", &a);</code></b>takes the value of the variable <b>a</b>
 from the user<br><br> And then <b><code>printf("%d", a);</code></b> displays the number/value of <b>a</b> as Output.<br><br>
+<div id="data"></div>
+<h2>Data Types</h2>
+<p>
+<code><b>int</b></code>: Used for integers (whole numbers).<br>
+Example: <code><b>int age = 25;</b></code><br>
+
+<b><code>float</code></b>: Used for single-precision decimal numbers.<br>
+Example: <code><b>float salary = 45000.50;</b></code><br>
+
+<code><b>double</b></code>: Used for double-precision decimal numbers (more accuracy than float).<br>
+Example: <code><b>double pi = 3.141592;</b></code><br>
+
+<code><b>char</b></code>: Used for a single character.<br>
+Example: <code><b>char grade = 'A';</b></code>
+</p><br>
+
  <h2>Basic Calculations and Variables</h2>     
  <p>As we learned how to take inputs and how to get outputs, now we will try some basic calculations with the variables like <b>summation, multiplication and dividing</b>.</p>
  <h4>Sum:</h4>
@@ -200,7 +218,7 @@ We can see the answer in the output.
   <c>printf</c>(<d>"Enter two numbers:"</d>);
   <c>scanf</c>(<d>"%lf %lf"</d>, &a, &b);
 
-     product = a * b;
+     p = a * b;
 
   <c>printf</c>(<d>"Product=%.2lf"</d>, p);
   <c>return</c> </>0</f>;
@@ -213,8 +231,11 @@ We can see the answer in the output.
 b = <f>8.91</f></code></pre>
 then,
 <pre><code>Product= <f>13.47</f></code></pre>
-</p><br><br>
-<div id="condition">
+</p>
+<div id="condition"></div>
+<br><br>
+
+
 <h2>Conditional Statement</h2><br>
 <p>
     In C programming, conditional statements are used to perform different actions based on certain conditions. The main types include:<br>
@@ -313,18 +334,187 @@ printf</c>(<d>"Largest= %.2lf "</d>, n3);
 
 2. The condition <code class="content">(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)</code> checks this rule.<br>
 </p>
-</div>
+<div id="loops"></div><br><br>
 <h2>Loops</h2>
+<p>
+    Loops are used to execute a block of code repeatedly, it maybe for some fixed times or untill a condition is met.
+</p><br>
+    <h3>1.for Loops</h3>
+    <p>
+for loop is used when the number of iterations is known already. It consists of three parts:<br>
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+<d>Initialization:</d> Sets the value of loop control variable.<br>
+
+<d>Condition:</d> Checks if the loop should continue or end.<br>
+
+<d>Increment/Decrement:</d> Updates the loop control variable.
+</p><br>
+<h4>Syntax</h4>
+<pre><code class="content">
+<c>for</c>(<f>initialization</f>; 
+    <d>condition</d>; <f>increment/decrement</f>) 
+{
+    <g>//Code to be executed</g>
+}
+</code></pre>
+<h4>Example</h4>
+<pre><code class="content">
+<c>#include</c>&ltstdio.h&gt;
+
+<c>int</c> <f>main()</f> 
+{
+  <c>for</c> (<c>int</c> i=<f>1</f>; i<=<f>5</f>; i++) 
+  {
+    <c>printf</c>(<d>"%d\n"</d>, i);
+  }
+<c>return</c> <f>0</f>;
+}
+</pre></code>
+<h4>Output</h4>
+<pre><code><f>
+ 1
+ 2
+ 3
+ 4
+ 5</f>
+</code></pre>
+<p>
+    This code runs the block of printf untill the condition <code>i<=5</code> is met.Ut increases by 1 each time it runs and end when the condition is met.
+</p><br>
+<h3>2.while Loop</h3>
+<p>The while loop is used when the number of iterations is not known beforehand but depends on a condition. The loop continues as long as the condition is true.
+</p>
+<h4>Syntax</h4>
+<pre><code class="content">
+<c>while</c> (<d>condition</d>) 
+{
+    <g>//Code to be executed</g>
+}
+</code></pre>
+<h4>Example</h4>
+<pre><code class="content">
+<c>#include</c>&ltstdio.h&gt;
+<c>int</c> <f>main()</f> 
+{
+<c>int</c> i = <f>1</f>;
+<c>while</c> (i <= <f>5</f>) 
+   {
+   <c>printf</c>(<d>"%d\n"</d>, i);
+      i++;
+   }
+<c>return</c> <f>0</f>;
+}
+</code></pre>
+<h4>Output</h4>
+<pre><code><f>
+ 1
+ 2
+ 3
+ 4
+ 5</f>
+</code></pre>
+<h3>do-while Loop</h3>
+<p>
+    The do while loop is same as the while loop, but unlike the while loop it executes the code before checking the condition.
+</p>
+<h4>Syntax</h4>
+<pre><code class="content"><c>do</c> 
+{
+    <g>//Code to be executed</g>
+} 
+<c>while</c> (<d>condition</d>);
+</code></pre>
+<h4>Example</h4>
+<pre><code class="content">
+<c>#include</c>&ltstdio.h&gt;
+
+<c>int</c> <f>main()</f> 
+{
+  <c>int</c> i = <f>1</f>;
+  <c>do</c>
+  {
+     <c>printf</c>(<d>"Iteration %d\n"</d>, i);
+     i++;
+  } 
+  <c>while</c> (i <= <f>5</f>);
+<c>return</c> <f>0</f>;
+}
+</code></pre>
+<h4>Output</h4>
+<pre><code><f>Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5</f>
+</code></pre>
+<h3>Nested loops</h3>
+To perform complex processing we can use nested loop, one loop inside another.
+<h4>Example</h4>
+<pre><code class="content">
+<c>#include</c>&ltstdio.h&gt;
+<c>int</c> <f>main()</f> 
+{
+ <c>for</c> (int i = <f>1</f>; i <= <f>3</f>; i++) 
+  {
+    <c>for</c> (int j = <f>1</f>; j <= <f>2</f>; j++) 
+    {
+      <c>printf</c>(<d>"i=%d, j=%d\n"</d>, i,j);
+    }
+   }
+<c>return</c> <f>0</f>;
+}
+</code></pre>
+<h4>Output</h4>
+<pre><code>
+ i = <f>1</f>, j = <f>1</f>
+ i = <f>1</f>, j = <f>2</f>
+ i = <f>2</f>, j = <f>1</f>
+ i = <f>2</f>, j = <f>2</f>
+ i = <f>3</f>, j = <f>1</f>
+ i = <f>3</f>, j = <f>2</f>
+</code></pre>
+<h4>Summary of Use Cases</h4>
+<ul>
+<li>
+Use a for loop when the number of iterations is known.</li>
+
+<li>Use a while loop when the iterations depend on a condition.</li>
+
+<li>Use a do-while loop when the code must execute at least once.</li></ul>
+<div id="function"><br></div>
+<h2>Function</h2>
+ <p>
+     Functions are blocks of code, designed to perform specific task.</p>
+     <h3>Function declaration</h3>
+     <p>We must declare a function before using it. The declaration includes the function's return type, name, and parameters (if any).    
+ </p>
+ <h4>Syntax</h4>
+<pre><code class="content"><c>return_type</c>
+ <c>function_name</c>(<d>parameter_list</d>);</code></pre>
+<h4>Example</h4>
+<pre><code class="content"><c>int</c> add(<d>int, int</d>); 
+   <g>//Function declaration</g></code></pre>
+<div id="funr"><br></div>
+<h3>Function Definition</h3>
+<p>The function definition provides the actual implementation of the function. It includes the return type, function name, parameters, and the body of the function.
+</p>
+<h4>Syntax</h4>
+<pre><code class="content"> <c>return_type </c>
+ <c>function_name</c>(parameter_list) 
+{
+     <g>//Function body</g>
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
  
     
                     
